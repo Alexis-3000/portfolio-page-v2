@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Bricolage Grotesque;
+    src: url(./fonts/BricolageGrotesque-VariableFont_opsz\wdth\wght.ttf);
+  }
+
+/* General ----------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --primary-color: #651FFF;
+    --secondary-color: #00BCD4;
+}  
+
+body {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    font-family: 'BricolageGrotesque', Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Links -------------------------- */
+
+a,
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.introSection a {
+    color: #aa00ff;
+}
+
+/* Buttons ------------------------ */
+
+button {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    border: 1px solid #000;
+    border-radius: 2rem;
+}
+
+/* Navigation --------------------- */
+
+header {
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    padding: 1.5rem 0;
+}
+
+/* ! add white background to header / only for about page? */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main --------------------- */
+
+main {
+    margin-top: 10rem;
+}
+
+/* Media Queries ---------------- */
+
+@media (min-width: 768px) {
+    body {
+        padding: 0 5.5rem 2rem 5.5rem;
+    } 
+}

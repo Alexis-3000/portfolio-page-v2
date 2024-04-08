@@ -1,0 +1,9 @@
+main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; /* ! does this work??? */
+    gap: 12rem 10rem;
+}  

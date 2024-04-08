@@ -1,0 +1,52 @@
+.lotusContainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+.lotus {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+.lotus::before, .lotus::after {
+    position: absolute;
+    top: -75px;
+    display: block;
+    border-radius: 50%;
+    content: "";
+    height: 0px;
+    width: 0px;
+}
+.lotus::before {
+    animation: lotus-chunk-top 2s ease infinite;
+    border: 75px solid var(--secondary-color);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+.lotus::after {
+    animation: lotus-chunk-bottom 2s ease infinite;
+    border: 75px solid var(--secondary-color);
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+@keyframes lotus-chunk-top {
+    0%,
+    100% {
+        transform: rotate(-135deg);
+    }
+    50% {
+        transform: rotate(-225deg);
+    }
+}
+@keyframes lotus-chunk-bottom {
+    0%,
+    100% {
+        transform: rotate(-135deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+}

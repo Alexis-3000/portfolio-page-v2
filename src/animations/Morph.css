@@ -1,0 +1,17 @@
+.morph {
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-color);
+    animation-name: morph;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes morph {
+    0%,
+    100% {
+
+    } 50% {
+        border-radius: 50%;
+    }
+}

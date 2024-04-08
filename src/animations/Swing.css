@@ -1,0 +1,35 @@
+.swingContainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+.swing {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+.swing::before {
+    position: absolute;
+    top: -75px;
+    display: block;
+    border-radius: 50%;
+    content: "";
+    height: 0px;
+    width: 0px;
+    animation: swing 4s ease infinite;
+    border: 75px solid var(--primary-color);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+@keyframes swing {
+    0%,
+    100% { 
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+}

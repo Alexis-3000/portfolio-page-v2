@@ -1,11 +1,8 @@
-# portfolio-page-v2
+## Studio Pommerenke 
+A portfolio page for Studio Pommerenke, refactored with React
 
-# Questions:
-- name classes in camelCase or with dashes?
-- how to handle text? put it in different files? but what to do with links inside the text?
+## Description
+This digital businesscard was build using React. The front page displays a number of animations built with CSS only.
 
-# to dos
-- properly style award section on about page -> what to do with years?
-- make sections collapsible for mobile view --> DONE
-
-- at the end: responsive styling!
+## Author
+Alexis-3000
